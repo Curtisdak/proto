@@ -1,12 +1,13 @@
 import "./homepage.css";
 import homeVideo from "../../assets/Video01.mp4"
 import { useNavigate } from "react-router-dom";
+import MusicPlayer from "../../components/MusicPlayer/MusicPlayer";
 
 function HomePage() {
   const navigate = useNavigate();
   return (
     <div>
-      <div class="video-container">
+      <div className="video-container">
         <video  muted loop autoPlay>
           <source src={homeVideo}  type="video/mp4"></source>
         </video>
@@ -34,8 +35,13 @@ function HomePage() {
           </div>
         </section>
       </div>
+      <MusicPlayer/>
   </div>
+  
   );
+  
+
 }
+
 
 export default HomePage;

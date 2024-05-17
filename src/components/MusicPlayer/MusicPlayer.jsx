@@ -29,6 +29,7 @@ import immortal from './musics/music-3.mp3';
 // #region -------- Styled Components -----------------------------------------
 const Div = styled('div')(({theme}) => ({
     width:'100vw',
+    opacity: "0.63",
     paddingTop: theme.spacing(6)
 }))
 
