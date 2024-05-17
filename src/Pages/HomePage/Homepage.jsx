@@ -5,7 +5,7 @@ function HomePage() {
   const navigate = useNavigate()
   return (
     <div>
-      <div class="video-container">
+      <div className="video-container">
         <video  muted loop autoPlay>
           <source src={homeVideo}  type="video/mp4"></source>
         </video>
