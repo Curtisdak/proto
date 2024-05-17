@@ -22,10 +22,10 @@ const Weather = () => {
         .then((data) => setWeather(data))
         .catch((err) => console.log(err));
     };
-    if (showIt) {
-      fetchApi();
-    }
-  }, [searchUrl, showIt]);
+   if(showIt){
+    fetchApi()
+   }
+  }, [searchUrl, showIt, setWeather, value]);
 
   const searchFunc = () => {
     setShowIt(true);
@@ -48,8 +48,8 @@ const Weather = () => {
       </div>
 
       <div className="results-container">
-        {weather.map((result, index) => (
-          <div key={index}>
+        {weather.map((result) => (
+          <div key={result}>
             {result && result.location && (
               <>
                 <h2 className="location-text">
@@ -75,7 +75,7 @@ const Weather = () => {
               </>
             )}
           </div>
-        ))}
+        ) )}
       </div>
     </div>
   );

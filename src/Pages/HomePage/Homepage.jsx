@@ -3,9 +3,8 @@ import homeVideo from "../../assets/Video01.mp4"
 import { useNavigate } from "react-router-dom";
 import MusicPlayer from "../../components/MusicPlayer/MusicPlayer";
 
-
 function HomePage() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <div>
       <div className="video-container">
@@ -15,7 +14,7 @@ function HomePage() {
       </div>
 
       <div id="homepage">
-        <h1 className="title">Welcome User</h1>
+        <h1 className="title">Welcome Curtis</h1>
 
         <section className="grid-container">
           <div className="item" onClick={()=>navigate("/home/notes")}>
