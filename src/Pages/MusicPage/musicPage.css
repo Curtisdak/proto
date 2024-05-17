@@ -1,6 +1,42 @@
 
 @media screen and (max-width:500px){
-    #music-page{
-    
+    .kirikou {
+        position: fixed;
+        top: 5%;
+
     }
+    #musicPage{
+        display: flex;
+        place-items: center;
+        
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .musicbox{
+        background-color: rgba(60, 58, 58, 0.583);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        width: 60%;
+        margin: 10px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+    }
+    .musicbox p {
+    color: white;
+    font-size: 20px;
+    }
+    .musiclogo{
+        font-size: 17rem;
+        /* color: lime; */
+        filter: drop-shadow(0 0 10PX white);
+        opacity: 0.6;
+    }
+.playerBox{
+padding: 0px;
+margin-top: -40px;
 }
+
+    }
