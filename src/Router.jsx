@@ -24,9 +24,6 @@ const router = createBrowserRouter([
                         path:"/Home/notes/notesDetails/:id/:type",
                         element:<NotesDetails/>,
                     },
-           
-           
-
             {
                 path:"/Home/quotes",
                 element:<Quotes/>,
