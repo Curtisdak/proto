@@ -1,8 +1,6 @@
 import "./homepage.css";
 import homeVideo from "../../assets/Video01.mp4"
 import { useNavigate } from "react-router-dom";
-
-
 function HomePage() {
   const navigate = useNavigate()
   return (
@@ -12,10 +10,8 @@ function HomePage() {
           <source src={homeVideo}  type="video/mp4"></source>
         </video>
       </div>
-
       <div id="homepage">
         <h1 className="title">Welcome User</h1>
-
         <section className="grid-container">
           <div className="item" onClick={()=>navigate("/home/notes")}>
             <h2 className="title2">Your Notes</h2>
@@ -38,5 +34,4 @@ function HomePage() {
   </div>
   );
 }
-
 export default HomePage;
