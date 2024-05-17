@@ -1,46 +1,29 @@
-@media screen and (max-width: 500px) {
-  #homepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    background-image: url("../src/assets/image02.jpg");
-    height: auto;
-    background-size: cover;
-    color: white;
-    font-weight: 700;
-    text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -1px 1px 0 #000,
-      2px 2px 0 #000;
-  }
+@media screen and (max-width:500px) {
+    #homepage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
 
-  #homepage .titleWelcome {
-    margin-bottom: 1%;
-  }
+    #homepage .title {
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+    }
 
-  #homepage .titleUser {
-    margin-bottom: 15%;
-  }
+    #homepage .title2 {
+        
+       align-items: center;
+    }
+    #homepage .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;  
+        gap: 10px;
 
-  #homepage .title2 {
-    font-size: 1.4rem;
-    line-height: 1;
-    text-align: center;
-  }
-
-  #homepage .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10vh;
-    padding-bottom: 10%;
-    margin-bottom: 5vh;
-  }
-
-  /* #homepage .item {
-   
-    width: 20vh;
-    background-color:rgba(142, 192, 156, 0.691);
-    border-radius: 10px;
     
-  } */
+ 
+      }
+    
 }

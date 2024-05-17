@@ -6,6 +6,7 @@ import NotesDetails from "./Pages/Notes/NotesDetails";
 import Quotes from "./Pages/Quotes/Quotes";
 import MusicPage from "./Pages/MusicPage/MusicPage";
 import HomePage from "./Pages/HomePage/Homepage";
+import Weather from "./Pages/Weather/Weather";
 const router = createBrowserRouter([
     {
         path:"/",
@@ -18,13 +19,13 @@ const router = createBrowserRouter([
             {
                 path:"/Home/notes",
                 element:<Notes/>,
-                children:[
-                    {
-                        path:"/Home/notes/notesDetails",
-                        element:<NotesDetails/>,
-                    }
-                ]
             },
+                    {
+                        path:"/Home/notes/notesDetails/:id/:type",
+                        element:<NotesDetails/>,
+                    },
+           
+           
 
             {
                 path:"/Home/quotes",
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
                 path:"/Home/homePage",
                 element:<HomePage/>,
             },
+            {
+                path:"/Home/weather",
+                element:<Weather/>,
+            },
+
         ]
     }
  ])

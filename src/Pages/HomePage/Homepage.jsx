@@ -1,47 +1,42 @@
 import "./homepage.css";
+import homeVideo from "../../assets/Video01.mp4"
 import { useNavigate } from "react-router-dom";
 
+
 function HomePage() {
-  const navigate = useNavigate();
-
-  const goToNotes = () => {
-    navigate("/Home/notes");
-  };
-
-  const goToMusic = () => {
-    navigate("/Home/musicPage");
-  };
-
-  const goToQuotes = () => {
-    navigate("/Home/quotes");
-  };
-
+  const navigate = useNavigate()
   return (
-    <div id="homepage">
-      <h1 className="titleWelcome">Welcome</h1>
-      <h1 className="title">User</h1>
+    <div>
+      <div class="video-container">
+        <video  muted loop autoPlay>
+          <source src={homeVideo}  type="video/mp4"></source>
+        </video>
+      </div>
 
-      <section className="grid-container">
-        <button onClick={goToNotes} className="item">
-          <h2 className="title2">Your </h2>
-          <h2 className="title2"> Notes</h2>
-        </button>
-        <button onClick={goToMusic} className="item">
-          <h2 className="title2">Your </h2>
-          <h2 className="title2"> Music</h2>
-        </button>
+      <div id="homepage">
+        <h1 className="title">Welcome User</h1>
 
-        <button onClick={goToQuotes} className="item">
-          <h2 className="title2">Your </h2>
-          <h2 className="title2"> Quotes</h2>
-        </button>
-
-        <button className="item">
-          <h2 className="title2">Your</h2>
-          <h2 className="title2"> Weather</h2>
-        </button>
-      </section>
-    </div>
+        <section className="grid-container">
+          <div className="item" onClick={()=>navigate("/home/notes")}>
+            <h2 className="title2">Your Notes</h2>
+            <div className="bar"></div>
+          </div>
+          <div className="item" onClick={()=>navigate("/home/musicPage")}>
+            <h2 className="title2">Your Music</h2>
+            <div className="bar"></div>
+          </div>
+          <div className="item" onClick={()=>navigate("/home/quotes")}>
+            <h2 className="title2">Your Quotes</h2>
+            <div className="bar"></div>
+          </div>
+          <div className="item"onClick={()=>navigate("/home/weather")}>
+            <h2 className="title2">Weather</h2>
+            <div className="bar"></div>
+          </div>
+        </section>
+      </div>
+  </div>
   );
 }
+
 export default HomePage;
