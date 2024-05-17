@@ -1,6 +1,12 @@
 @media screen and (max-width:500px){
+<<<<<<< HEAD
     #id{
         width: 100%;
     }
     
+=======
+    #home{
+        position: relative;
+    }
+>>>>>>> 83f2c91ce1bce4a8a7b3015c02a4305d61b51273
 }
